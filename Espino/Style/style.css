@@ -1,0 +1,236 @@
+body {
+    display: grid; 
+    text-align: center; 
+    align-items: center; 
+    margin: 0; 
+    padding: 0; 
+    background-color: rgba(255, 255, 255, 0.892);
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+.navbar li {
+    margin: 0 15px;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-family: "Fugaz One", serif;
+}
+
+.sinopsis {
+    text-align: left;
+    margin: 0.5% 16% 0% 16%; /* Margen superior, derecho, inferior e izquierdo */
+    font-family: "Fugaz One", serif;
+}
+
+h3 {
+    text-align: left;
+    margin: 0.5% 16% 0% 16%; /* Margen superior, derecho, inferior e izquierdo */
+    font-family: "Fugaz One", serif;
+}
+
+/* Animaciones para cada h1. */
+
+@keyframes colorChange {
+    0% {
+        color: black;
+    }
+    50% {
+        color: gray;
+    }
+    100% {
+        color: black;
+    }
+}
+@keyframes colorChange2 {
+    0% {
+        color: black;
+    }
+    50% {
+        color: yellow;
+    }
+    100% {
+        color: black;
+    }
+}
+@keyframes colorChange3 {
+    0% {
+        color: black;
+    }
+    50% {
+        color: green;
+    }
+    100% {
+        color: black;
+    }
+}
+@keyframes colorChange4 {
+    0% {
+        color: black;
+    }
+    50% {
+        color: skyblue;
+    }
+    100% {
+        color: black;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-family: "Fugaz One", serif;
+    font-size: 40px;
+    animation: colorChange 4s infinite;
+    animation-delay: 1.5s; /* Retraso antes de que comience la animación */
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    margin-bottom: 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+}
+
+.parrafo {
+    margin: 0.5% 16% 0% 16%; /* Margen superior, derecho, inferior e izquierdo */
+    text-align: justify;
+    font-family: "Work Sans", serif;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.cita {
+    margin: 0.5% 16% 0% 16%; /* Margen superior, derecho, inferior e izquierdo */
+    text-align: justify;
+    font-family: "Work Sans", serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.secondPage{
+    text-align: center;
+    font-family: "Fugaz One", serif;
+    font-size: 40px;
+    animation: colorChange2 4s infinite;
+    animation-delay: 2.5s; /* Retraso antes de que comience la animación */
+    animation-direction: normal;
+    margin-bottom: 0;
+}
+
+.thirdPage{
+    text-align: center;
+    font-family: "Fugaz One", serif;
+    font-size: 40px;
+    animation: colorChange3 4s infinite;
+    animation-delay: 2.5s; /* Retraso antes de que comience la animación */
+    animation-direction: normal;
+    margin-bottom: 0;
+}
+
+.fourthPage{
+    text-align: center;
+    font-family: "Fugaz One", serif;
+    font-size: 40px;
+    animation: colorChange4 4s infinite;
+    animation-delay: 2.5s; /* Retraso antes de que comience la animación */
+    animation-direction: normal;
+    margin-bottom: 0;
+}   
+
+.table-title{
+    font-family: "Fugaz One", serif;
+    font-size: 20px;
+    margin: 0 0 0 0;
+}
+
+.movie-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: "Work Sans", serif;
+}
+
+.movie-table th, .movie-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.movie-table th {
+    background-color: black;
+    color: rgb(0, 255, 255);
+    font-weight: bold;
+}
+
+.movie-table tr:nth-child(even) { 
+    background-color: rgba(128, 128, 128, 0.200);
+}
+
+.movie-table tr:hover {
+    background-color: rgba(128, 128, 128, 0.200);
+}
+
+.content-wrapper {
+    display: flex; 
+    margin: 20px; /* Margen superior, derecho, inferior e izquierdo */
+    padding: 0%;
+}
+
+.left-side, .right-side {
+    width: 100%;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 17rem; 
+    height: 21rem;
+    max-width: 100%;
+    object-fit: cover;
+    margin: 0 0 0 0;
+}
+
+.movie-table {
+    width: 75%;
+}
+
+/* Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .sinopsis, h3, .parrafo, .cita {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .navbar li {
+        margin: 0 10px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
