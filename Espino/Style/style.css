@@ -10,7 +10,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgba(255, 255, 255, 0.892);
-  overflow: hidden;
+  overflow-y: visible;
+  overflow-wrap: break-word;
 }
 
 .navbar {
@@ -46,7 +47,7 @@ h3 {
 
 @keyframes colorChange {
   0% {
-    color: black;
+    color: white;
   }
   50% {
     color: gray;
@@ -57,7 +58,7 @@ h3 {
 }
 @keyframes colorChange2 {
   0% {
-    color: black;
+    color: green;
   }
   50% {
     color: yellow;
@@ -68,7 +69,7 @@ h3 {
 }
 @keyframes colorChange3 {
   0% {
-    color: black;
+    color: brown;
   }
   50% {
     color: rgb(184, 134, 97);
@@ -79,7 +80,7 @@ h3 {
 }
 @keyframes colorChange4 {
   0% {
-    color: black;
+    color: purple;
   }
   50% {
     color: skyblue;
@@ -91,7 +92,7 @@ h3 {
 
 h1 {
   text-align: center;
-  margin: 3% 0 0 0;
+  margin: 2% 0 0 0;
   font-family: "Fugaz One", serif;
   font-size: 45px;
   animation: colorChange 4s infinite;
@@ -244,7 +245,17 @@ img {
   }
 
   img {
-    width: 100%;
+    width: 50%;
     height: auto;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
   }
 }
