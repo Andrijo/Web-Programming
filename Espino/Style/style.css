@@ -95,7 +95,7 @@ h1 {
   margin: 2% 0 0 0;
   font-family: "Fugaz One", serif;
   font-size: 45px;
-  animation: colorChange 4s infinite;
+  animation: colorChange 3s infinite;
   animation-delay: 1.5s; /* Retraso antes de que comience la animación */
   animation-iteration-count: infinite;
   animation-direction: normal;
